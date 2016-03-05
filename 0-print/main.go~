@@ -1,9 +1,0 @@
-package main
-import "fmt"
-import "time"
-func main() {
-fmt.Println("Hello, we are Holberton School")
-const longForm = "Jan 2, 2006 at 3:04pm (MST)"
-t, _ := time.Parse(longForm,(PST)")
-fmt.Println("The date is ", (t))
-}
