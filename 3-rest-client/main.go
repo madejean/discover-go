@@ -14,7 +14,6 @@ func main() {
 		fmt.Println(err)
 	}
 	defer resp.Body.Close()
-	fmt.Println("status code is", resp.StatusCode, "OK")
 
 	var u movie
 	if err := json.NewDecoder(resp.Body).Decode(&u); err != nil {
